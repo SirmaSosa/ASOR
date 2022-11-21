@@ -1,0 +1,13 @@
+En el archivo locks se encuentra esta información
+1: POSIX  ADVISORY  WRITE 1020 08:01:540373 0 EOF
+2: POSIX  ADVISORY  WRITE 1001 08:01:540281 0 EOF
+3: FLOCK  ADVISORY  WRITE 601 00:1b:6 0 EOF
+4: POSIX  ADVISORY  WRITE 1024 08:01:540374 0 EOF
+5: POSIX  ADVISORY  WRITE 1013 08:01:540357 0 EOF
+6: FLOCK  ADVISORY  WRITE 397 00:18:369 0 EOF
+
+La tercera columna, ADVISORY impide que otros puedan bloquearla y MANDATORY que mientras dura el bloqueo no se puede acceder a los datos.
+La cuarta indica el permiso permitido.
+La quinta el proceso que tiene el bloqueo.
+La sexta columna indica el id del archivo bloqueado.
+La séptima y octava, inicio y final de la región bloqueada.
