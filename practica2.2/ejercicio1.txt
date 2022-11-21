@@ -1,0 +1,10 @@
+-a :Para no ignorar entradas que empiezan con .
+-l :Para utilizar long listing format
+-d :Para listar los directorios
+-h :Con -l y -s muestra el tamaño como 2G
+-i :Para mostrar los inodos
+-R :Para listar los subdirectorios recursivamente
+-1 :Para mostrar un archivo por linea
+-F :Para adjuntar un indicador a las entradas
+--color :Para dar color a la salida
+
