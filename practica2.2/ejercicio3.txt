@@ -1,0 +1,2 @@
+chmod 645 [archivo/directorio]
+chmod u=rw g=r o=r
