@@ -1,0 +1,1 @@
+Si se borra el original, en un enlace rígido no se borra el enlace, mientras que en el simbólico no existiría la ruta por lo que no se podría acceder.
