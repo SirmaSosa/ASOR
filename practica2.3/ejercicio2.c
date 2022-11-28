@@ -6,17 +6,17 @@ int main(int argc,char **argv){
 	int process = sched_getscheduler(pid);
 
 	if(process == SCHED_OTHER)
-		printf("Other");
+		printf("Other\n");
 	else if(process == SCHED_FIFO)
-		printf("FIFO");
+		printf("FIFO\n");
 	else if( process == SCHED_RR)
-		printf("RR");
+		printf("RR\n");
 	
 	struct sched_param p;
 	sched_getparam(pid,&p);
-	printf("El proceso con id %i tiene una prioridad %i",pid,p.sched_priority);
+	printf("El proceso con id %i tiene una prioridad %i\n",pid,p.sched_priority);
 	
 	int max = sched_get_priority_max(process);
 	int min = sched_get_priority_min(process);
-	printf("Max:%i,Min:%i",max,min);
+	printf("Max:%i,Min:%i\n",max,min);
 }
