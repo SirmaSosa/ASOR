@@ -1,5 +1,9 @@
+#include <unistd.h>
+#include <sys/types.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <sys/resource.h>
+#include <sys/time.h>
 
 int main(){
  	printf("PID: %i\n", getpid());
@@ -9,5 +13,5 @@ int main(){
 
 	struct rlimit lim;
 	getrlimit(RLIMIT_NOFILE, &lim);
-	printf("LIMIT: %i\n" lim.rlimit_max);
+	printf("LIMIT: %li\n", lim.rlim_max);
 }
